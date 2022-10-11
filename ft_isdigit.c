@@ -6,37 +6,17 @@
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 16:05:41 by scalero-          #+#    #+#             */
-/*   Updated: 2022/10/10 16:05:45 by scalero-         ###   ########.fr       */
+/*   Updated: 2022/10/11 11:30:11 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int ft_isdigit(char *c)
+#include "libft.h"
+int ft_isdigit(int c)
 {
-    int i;
-    int salida;
-
-    i = 0;
-    salida = 1;
-    while (c[i] != '\0')
-    {
-        if (c[i] >= 48 && c[i] <= 57)
-             salida = 1;
-        else
-        {
-             salida = 0;
-             break;
-        }
-		i++;
-    }
-	return salida;
+	if (c>= '0' && c<= '9')
+		return (1);
+	else
+		return (0);
 }
 
-/*int main()
-{
-
-	char destino[] = "123j";
-	ft_isdigit(destino);
-    printf("%d", ft_isdigit(destino));
-}*/
 

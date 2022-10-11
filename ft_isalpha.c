@@ -6,36 +6,16 @@
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 16:05:04 by scalero-          #+#    #+#             */
-/*   Updated: 2022/10/10 16:05:09 by scalero-         ###   ########.fr       */
+/*   Updated: 2022/10/11 11:22:44 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int ft_isalpha(char *c)
+#include "libft.h"
+int	ft_isalpha(int c)
 {
-    int i;
-    int salida;
-
-    i = 0;
-    salida = 1;
-    while (c[i] != '\0')
-    {
-        if ((c[i] >= 65 && c[i] <= 90) || (c[i] >= 97 && c[i] <= 122))
-            salida = 1;
-        else
-        {
-            salida = 0;
-            break;
-        }
-        i++;
-    }
-    return salida;
+   	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
     
 }
-
-/*int   main()
-{
-	char destino[] = "abd45";
-    ft_isalpha(destino);
-    printf("%d", ft_isalpha(destino));
-}*/
