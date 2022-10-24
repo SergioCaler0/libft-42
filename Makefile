@@ -6,7 +6,7 @@
 #    By: scalero- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/11 08:53:18 by scalero-          #+#    #+#              #
-#    Updated: 2022/10/11 12:06:37 by scalero-         ###   ########.fr        #
+#    Updated: 2022/10/24 14:19:47 by scalero-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,7 @@ SRCS	= ft_isalpha.c \
 		  ft_isdigit.c \
 		  ft_isprint.c \
 		  ft_strlen.c \
+		  ft_memset.c \
 
 OBJS	= $(SRCS:.c=.o)
 
