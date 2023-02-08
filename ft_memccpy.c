@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/14 18:41:04 by scalero-          #+#    #+#             */
-/*   Updated: 2023/02/08 17:01:51 by scalero-         ###   ########.fr       */
+/*   Created: 2023/02/08 16:45:31 by scalero-          #+#    #+#             */
+/*   Updated: 2023/02/08 16:45:37 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	unsigned char	*str1;
-	unsigned char	*str2;
+	size_t	index;
 
-	str1 = (unsigned char *)s1;
-	str2 = (unsigned char *)s2;
-	if (n == 0)
-		return (0);
-	while ((*str1 == *str2) && (n - 1 > 0) && (*str1 != '\0' || *str2 != '\0'))
+	index = 0;
+	while (index <= n)
 	{
-		str1++;
-		str2++;
-		n--;
+		if (((unsigned char *)src)[index] != (unsigned char)c)
+		{
+			((unsigned char *)dst)[index] = ((unsigned char *)src)[index];
+		}
+		else if (((unsigned char *)src)[index] == (unsigned char)c)
+		{
+			((unsigned char *)dst)[index] = ((unsigned char *)src)[index];
+			return ((void *)dst + 1);
+		}
+		index++;
 	}
-	return (*str1 - *str2);
+	return (NULL);
 }
-
