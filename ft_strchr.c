@@ -6,13 +6,13 @@
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:57:51 by scalero-          #+#    #+#             */
-/*   Updated: 2023/02/08 16:49:43 by scalero-         ###   ########.fr       */
+/*   Updated: 2023/03/08 18:53:44 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	size_t	index;
 	size_t	len;

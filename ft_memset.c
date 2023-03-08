@@ -6,14 +6,15 @@
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:36:53 by scalero-          #+#    #+#             */
-/*   Updated: 2022/10/24 14:21:15 by scalero-         ###   ########.fr       */
+/*   Updated: 2023/03/08 19:34:46 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void *ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t index;
+	size_t	index;
+
 	index = 0;
 	while (index < len)
 		((unsigned char *)b)[index ++] = c;

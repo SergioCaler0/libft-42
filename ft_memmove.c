@@ -6,7 +6,7 @@
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 09:50:37 by scalero-          #+#    #+#             */
-/*   Updated: 2022/11/14 10:47:27 by scalero-         ###   ########.fr       */
+/*   Updated: 2023/03/08 19:57:02 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t i;
-	int src_dst;
+	size_t	i;
+	int	src_dst;
 
 	src_dst = (dst - src);
 	i = 0;
-	if	(src == NULL && dst == NULL)
+	if (src == NULL && dst == NULL)
 		return (NULL);
 	if	(src_dst < 0)
 	{
