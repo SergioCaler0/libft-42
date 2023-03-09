@@ -6,7 +6,7 @@
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 09:50:37 by scalero-          #+#    #+#             */
-/*   Updated: 2023/03/08 19:57:02 by scalero-         ###   ########.fr       */
+/*   Updated: 2023/03/09 12:18:59 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	if (src == NULL && dst == NULL)
 		return (NULL);
-	if	(src_dst < 0)
+	if (src_dst < 0)
 	{
 		while (len > 0)
 		{

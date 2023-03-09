@@ -6,7 +6,7 @@
 /*   By: scalero- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 11:38:54 by scalero-          #+#    #+#             */
-/*   Updated: 2023/02/08 12:07:35 by scalero-         ###   ########.fr       */
+/*   Updated: 2023/03/09 12:09:31 by scalero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -46,6 +46,7 @@ int	ft_atoi(const char *nptr)
 	return (result * sign);
 }
 */
+
 int		ft_atoi(const char *str)
 {
 	size_t				index;
